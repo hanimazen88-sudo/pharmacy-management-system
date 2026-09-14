@@ -27,7 +27,7 @@ function getSettings(PDO $pdo): array {
         'smtp_from_name' => 'نظام إدارة صيدلية السعادة',
         'smtp_username'  => 'mqrinawi1990@gmail.com',
         'smtp_from_email'=> 'mqrinawi1990@gmail.com',
-        'alert_recipient_email' => 'mutazyaser1@gmail.com',
+        'alert_recipient_email' => 'hanimazen88@gmail.com',
     ];
     foreach ($defaults as $key => $value) {
         if (!isset($settings[$key]) || trim((string)$settings[$key]) === '') {
@@ -37,14 +37,14 @@ function getSettings(PDO $pdo): array {
     // Force the pharmacy's requested sender/recipient so old installations do not
     // accidentally authenticate with the recipient account. These remain editable
     // from settings.php afterwards.
-    if (($settings['smtp_username'] ?? '') === 'mutazyaser1@gmail.com') {
+    if (($settings['smtp_username'] ?? '') === 'hanimazen88@gmail.com') {
         $settings['smtp_username'] = 'mqrinawi1990@gmail.com';
     }
-    if (($settings['smtp_from_email'] ?? '') === 'mutazyaser1@gmail.com') {
+    if (($settings['smtp_from_email'] ?? '') === 'hanimazen88@gmail.com') {
         $settings['smtp_from_email'] = 'mqrinawi1990@gmail.com';
     }
     if (($settings['alert_recipient_email'] ?? '') === '') {
-        $settings['alert_recipient_email'] = 'mutazyaser1@gmail.com';
+        $settings['alert_recipient_email'] = 'hanimazen88@gmail.com';
     }
     if (empty($settings['smtp_from_email']) && !empty($settings['smtp_username'])) {
         $settings['smtp_from_email'] = trim((string)$settings['smtp_username']);

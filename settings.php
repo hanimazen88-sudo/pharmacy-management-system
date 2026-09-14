@@ -5,7 +5,7 @@ require_once 'config/db.php';
 require_once 'includes/functions.php';
 require_once 'includes/mailer.php';
 
-// إعدادات البريد الافتراضية للصيدلية: المرسل هو mqrinawi1990@gmail.com والمستقبل mutazyaser1@gmail.com.
+// إعدادات البريد الافتراضية للصيدلية: المرسل هو mqrinawi1990@gmail.com والمستقبل hanimazen88@gmail.com.
 // لا يتم حفظ كلمة مرور SMTP داخل ملفات المشروع؛ يجب إدخال App Password مرة واحدة من شاشة الإعدادات.
 $pharmacyMailDefaults = [
     'smtp_host' => 'smtp.gmail.com',
@@ -13,11 +13,11 @@ $pharmacyMailDefaults = [
     'smtp_username' => 'mqrinawi1990@gmail.com',
     'smtp_from_email' => 'mqrinawi1990@gmail.com',
     'smtp_from_name' => 'نظام إدارة صيدلية السعادة',
-    'alert_recipient_email' => 'mutazyaser1@gmail.com',
+    'alert_recipient_email' => 'hanimazen88@gmail.com',
 ];
 $currentMailSettings = getSettings($pdo);
 // تصحيح الإعدادات القديمة التي كانت تستخدم البريد المستقبل كحساب SMTP.
-if (($currentMailSettings['smtp_username'] ?? '') !== 'mqrinawi1990@gmail.com' || ($currentMailSettings['alert_recipient_email'] ?? '') !== 'mutazyaser1@gmail.com') {
+if (($currentMailSettings['smtp_username'] ?? '') !== 'mqrinawi1990@gmail.com' || ($currentMailSettings['alert_recipient_email'] ?? '') !== 'hanimazen88@gmail.com') {
     // The previous installation could have stored credentials for the recipient account.
     // Clear that password when switching the SMTP account so an old password can never
     // be reused accidentally with mqrinawi1990@gmail.com.
@@ -33,7 +33,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     // إعدادات لم تُحفظ بعد (وهي كانت سبب ظهور خطأ SMTP Host في بعض الحالات).
     $postedValues = [
         'alerts_enabled'        => isset($_POST['alerts_enabled']) ? '1' : '0',
-        'alert_recipient_email' => trim($_POST['alert_recipient_email'] ?? 'mutazyaser1@gmail.com'),
+        'alert_recipient_email' => trim($_POST['alert_recipient_email'] ?? 'hanimazen88@gmail.com'),
         'smtp_host'             => trim($_POST['smtp_host'] ?? 'smtp.gmail.com'),
         'smtp_port'             => trim($_POST['smtp_port'] ?? '587'),
         'smtp_username'         => trim($_POST['smtp_username'] ?? 'mqrinawi1990@gmail.com'),
@@ -126,13 +126,13 @@ require_once 'includes/header.php';
         </div>
 
         <div class="alert alert-info border-0" style="background:#eef8f4;color:#28584b">
-            <i class="bi bi-magic"></i> تم تجهيز إعدادات Gmail تلقائيًا. <b>المرسل:</b> mqrinawi1990@gmail.com &nbsp; | &nbsp; <b>المستقبل:</b> mutazyaser1@gmail.com.
+            <i class="bi bi-magic"></i> تم تجهيز إعدادات Gmail تلقائيًا. <b>المرسل:</b> mqrinawi1990@gmail.com &nbsp; | &nbsp; <b>المستقبل:</b> hanimazen88@gmail.com.
         </div>
 
         <div class="row g-3">
             <div class="col-md-12">
                 <label class="form-label fw-semibold">البريد الإلكتروني المستقبِل للتنبيهات *</label>
-                <input type="email" name="alert_recipient_email" class="form-control" value="<?= e($settings['alert_recipient_email'] ?? 'mutazyaser1@gmail.com') ?>" placeholder="البريد المستقبِل">
+                <input type="email" name="alert_recipient_email" class="form-control" value="<?= e($settings['alert_recipient_email'] ?? 'hanimazen88@gmail.com') ?>" placeholder="البريد المستقبِل">
             </div>
 
             <div class="col-md-8">
