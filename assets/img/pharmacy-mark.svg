@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 180 180" role="img" aria-label="شعار الصيدلة">
+<circle cx="90" cy="90" r="82" fill="#ffffff" opacity=".12"/>
+<circle cx="90" cy="90" r="68" fill="#ffffff"/>
+<path d="M90 48c-13 0-23 10-23 23 0 11 7 20 17 23v22c-14 4-25 14-30 27h72c-5-13-16-23-30-27V94c10-3 17-12 17-23 0-13-10-23-23-23z" fill="#0b7354"/>
+<path d="M126 93c21 0 34-9 45-29-25 0-43 7-54 22-8 11-11 24-12 39 7-14 12-24 21-32z" fill="#8bd94b"/>
+<path d="M67 102h46M75 78h30" stroke="#0b7354" stroke-width="9" stroke-linecap="round"/>
+</svg>

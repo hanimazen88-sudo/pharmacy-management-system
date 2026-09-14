@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 420 150" role="img" aria-labelledby="title desc">
+  <title id="title">شعار صيدلية السعادة</title>
+  <desc id="desc">رمز الصيدلة مع اسم صيدلية السعادة</desc>
+  <defs>
+    <linearGradient id="green" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#0b6b50"/><stop offset="1" stop-color="#18a66e"/>
+    </linearGradient>
+  </defs>
+  <g transform="translate(18 15)">
+    <circle cx="60" cy="60" r="56" fill="url(#green)"/>
+    <path d="M60 25c-9 0-16 7-16 16 0 8 5 14 12 16v16c-10 3-18 10-21 19h50c-3-9-11-16-21-19V57c7-2 12-8 12-16 0-9-7-16-16-16z" fill="#fff"/>
+    <path d="M88 63c18 0 29-8 38-23-17 0-31 5-39 16-6 8-8 17-9 28 5-10 9-16 10-21z" fill="#91df4c"/>
+    <path d="M43 70h34" stroke="#0b6b50" stroke-width="7" stroke-linecap="round"/>
+    <path d="M50 52h20" stroke="#0b6b50" stroke-width="6" stroke-linecap="round"/>
+  </g>
+  <text x="155" y="70" direction="rtl" text-anchor="start" font-family="Tahoma,Arial,sans-serif" font-size="34" font-weight="800" fill="#0b6b50">صيدلية السعادة</text>
+  <text x="155" y="105" direction="rtl" text-anchor="start" font-family="Tahoma,Arial,sans-serif" font-size="19" font-weight="600" fill="#5b6c6a">نظام إدارة الصيدلية</text>
+</svg>
