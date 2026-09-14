@@ -3,7 +3,7 @@
 ## إعداد البريد الإلكتروني
 تم تجهيز النظام تلقائيًا باستخدام:
 - بريد الإرسال: mqrinawi1990@gmail.com
-- بريد الاستقبال: mutazyaser1@gmail.com
+- بريد الاستقبال: hanimazen88@gmail.com
 - SMTP Host: smtp.gmail.com
 - Port: 587
 - Encryption: STARTTLS
